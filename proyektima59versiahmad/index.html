@@ -6,6 +6,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <title>Proyek A59</title>
+      <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="stylesheet.css">
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,16 +31,10 @@
                 <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#info">Info Kesehatan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#pelayanan">Pelayanan</a>
-              </li>
+                <a class="nav-link js-scroll-trigger" href="#covid">Info COVID-19</a>
+              </li>              
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#tanya">Tanya Dokter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#covid">Info COVID-19</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact">Hubungi Kami</a>
@@ -66,62 +61,54 @@
         </div>
       </section>
 
-      <section id="info">
-        <div class="container">
-          <div class="card border-0 shadow my-5">
-            <div class="card-body p-5">
-              <h1 class="font-weight-light">Info Kesehatan</h1>
-              <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-              <p class="lead">Scroll down...</p>
-              <p class="lead mb-0">You've reached the end!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="pelayanan">
-        <div class="container">
-          <div class="card border-0 shadow my-5">
-            <div class="card-body p-5">
-              <h1 class="font-weight-light">Pelayanan</h1>
-              <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-              <p class="lead">Scroll down...</p>
-              <p class="lead mb-0">You've reached the end!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="tanya">
-        <div class="container">
-          <div class="card border-0 shadow my-5">
-            <div class="card-body p-5">
-              <h1 class="font-weight-light">Tanya Dokter</h1>
-              <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-              <p class="lead">Scroll down...</p>
-              <p class="lead mb-0">You've reached the end!</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="covid">
         <div class="container">
           <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
               <h1 class="font-weight-light">Info COVID-19</h1>
-              <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-              <p class="lead">Scroll down...</p>
-              <p class="lead mb-0">You've reached the end!</p>
+              <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="tanya">
+        <div class="container">
+          <div class="card border-0 shadow my-5">
+            <div class="card-body p-5">
+              <h1 class="font-weight-light">Tanya Dokter</h1>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Alamat Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">Alamat email anda tidak akan disebarkan.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Keluhan</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" aria-describedby="keluhanHelp" rows="3"></textarea>
+                  <small id="keluhanHelp" class="form-text text-muted">Deskripsikan secara detil mengenai keluhan yang anda alami</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section id="contact">
         <div class="container">
           <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
               <h1 class="font-weight-light">Hubungi Kami</h1>
-              <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
-              <p class="lead">Scroll down...</p>
-              <p class="lead mb-0">You've reached the end!</p>
+              <p class="lead">Proyek ini adalah hasil dari kerjasama tim yang terdiri dari:</p>
+              <ui>
+                <li>Achmad Sofwan Mulyawan <i class="fa fa-instagram" aria-hidden="true"> @ahmadbahauddin_</i></li>
+                <li>Affin <i class="fa fa-envelope" aria-hidden="true"> affinutha@gmail.com</i></li>
+                <li>Aldi Khoirul Abdillah <i class="fa fa-instagram" aria-hidden="true"> @ahmadbahauddin_</i></li>
+                <li>Ahmad Bahauddin <i class="fa fa-instagram" aria-hidden="true"> @ahmadbahauddin_</i></li>
+                <li>Andhen <i class="fa fa-envelope" aria-hidden="true"> aandhen@gmail.com</i></li>
+              </ui>
+              <p class="lead mb-0">You've reached the end.. Thankyou!</p>
             </div>
           </div>
         </div>
@@ -131,7 +118,7 @@
       <!-- Footer -->
       <footer class="py-5 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+          <p class="m-0 text-center text-white">Copyright &copy; Tim A59 DTS Kominfo 2020</p>
         </div>
         <!-- /.container -->
       </footer>
