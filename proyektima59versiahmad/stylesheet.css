@@ -1,0 +1,42 @@
+body {
+	background: url('https://img.freepik.com/free-vector/abstract-blue-background-with-medical-elements-health-care-concept_1302-5643.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+  }
+
+.logo img{
+	float: left;
+	width: 170px;
+	height: auto;
+	padding-top: 1px;
+}
+
+.img-logo {
+	width: 32px;
+	height: 32px;
+	fill: #fff;
+}
+
+.nav-link:hover {
+	background-color: rgba(158, 12, 190, 0.521);
+}
+
+.nav-link.active {
+	background-color: rgb(194, 39, 230);
+}
+
+.card { 
+	background-color: rgba(245, 245, 245, 0.4); 
+}
+
+.card-header, .card-footer { 
+	opacity: 1;
+}
+
+@media (max-width: 800px) {
+	.logo {
+		display: none;
+	}
+}
